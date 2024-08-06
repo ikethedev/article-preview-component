@@ -1,0 +1,204 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-size: 13px;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: hsl(210, 46%, 95%);
+    font-family: "Manrope", sans-serif;
+
+}
+
+
+main{
+    position: relative;
+    width: 80vw;
+    margin: 0 auto;
+    background-color: #fff;
+    border-radius: 1em;
+    box-shadow: #C9D5E1 0px 40px 40px 10px;
+}
+
+/* .card_top{
+    width: 100%;
+    height: 70%;
+    background-image: url("../images/drawers.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
+    border-radius: 1rem 1rem 0 0;
+} */
+
+.drawers{
+    width: 100%;
+    height: 40%;
+    border-radius: 10px 10px 0 0;
+}
+
+.post_info{
+    display: flex;
+    flex-direction: column;
+    padding: 3rem 2em 0;
+    gap: 1rem;
+   
+}
+
+.card_bottom, .profile{
+    display: flex;
+    position: relative;
+  
+}
+
+h1, h2{
+    color: #48556A;
+}
+
+h1{
+    font-size: 1.23em;
+    line-height: 1.5em;
+}
+
+h2{
+    font-size: 1rem;
+}
+
+p{
+    color: #6E8098;
+    line-height: 1.75em;
+}
+
+.profile{
+    margin-top: 2rem; 
+    display: flex;
+    gap: .75rem;
+    align-items: center;
+  
+}
+
+.profile img{
+    border-radius: 50%;
+    width: 15%;
+}
+
+.date{
+    color: #9DAEC2;
+    font-size: 1em;
+}
+
+#share{
+    background-color: #ECF2F8; 
+    padding: 1em;
+    border-radius: 50%;
+    align-self: flex-end;
+    z-index: 100;
+}
+
+.share_active{
+    display: flex;
+    gap: 1em;
+    background-color: #48556A;
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    padding: 1.5em 0 3.5em;
+    border-radius:  0 0 1em 1em;
+  }
+
+
+  .share_icon{
+    fill: #fff;
+  
+  }
+
+  #share.active{
+    background-color: #6E8098;
+    color: #fff;
+  }
+  
+
+ 
+
+  .icons{
+    display: flex;
+    gap: 1.5em;
+    align-items: center;
+  }
+
+  h4{
+    color: #9DAEC2;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+    font-weight: 200;
+    padding-left: 2em;
+  }
+
+  .hide{
+    display: none;
+  }
+
+ 
+  
+  @media screen and (min-width: 1250px) {
+    main{
+        display: flex;
+        flex-direction: row;
+        height: 35%;
+        width: 50%;
+        border-radius: 1rem ;
+        
+    }
+
+    .drawers{
+        height: 100%;
+        width: 40%;
+        border-radius: 1rem 0 0 1rem;
+    }
+
+    .post_info{
+        padding: 4em;
+    }
+
+
+    h1{
+        font-size: 1.53em;
+    }
+
+    #share{
+        margin-left: auto;
+    }
+
+    .share_active{
+        display: flex;
+        gap: 1em;
+        background-color: #48556A;
+        position: absolute;
+        right: -8.7%;
+        bottom: 30%;
+        padding: 1.5em 4.5em;
+        border-radius: 1em;
+        width: 20%;
+        justify-content: center;
+      }
+    
+      .share_active::after{
+        content: "";
+        border-left: 15px solid transparent;
+        border-right: 15px solid transparent;
+        border-top: 15px solid #48556A;
+        position: absolute;
+        left: 42%;
+        bottom: -12px;
+        width: 0;
+        height: 0;
+      }
+
+      h4{
+        padding-left: 0;
+      }
+  }
