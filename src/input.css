@@ -148,7 +148,6 @@ p{
     main{
         display: flex;
         flex-direction: row;
-        
         width: 50%;
         border-radius: 1rem ;
         
