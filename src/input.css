@@ -138,9 +138,7 @@ p{
     padding-left: 2em;
   }
 
-  .hide{
-    display: none;
-  }
+ 
 
  
   
@@ -201,3 +199,8 @@ p{
         padding-left: 0;
       }
   }
+
+  .hide{
+    display: none;
+  }
+  
